@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-Estar - Autoavaliação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="avaliacao.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="deco swirl-top"></div>
+        <div class="deco flower-bottom"></div>
+    </div>
+
+    <main class="main-container">
+        <header class="hero-text">
+            <h1>Vamos avaliar<br>seu Bem-Estar.</h1>
+        </header>
+
+        <nav class="navbar">
+            <div class="step completed"><div class="circle">1</div><span>Perfil</span></div>
+            <div class="line active"></div>
+            <div class="step completed"><div class="circle">2</div><span>Rotina</span></div>
+            <div class="line active"></div>
+            <div class="step completed"><div class="circle">3</div><span>Contexto</span></div>
+            <div class="line active"></div>
+            <div class="step completed"><div class="circle">4</div><span>Emoção</span></div>
+            <div class="line active"></div>
+            <div class="step completed"><div class="circle">5</div><span>Apoio</span></div>
+            <div class="line active"></div>
+            <div class="step active"><div class="circle">6</div><span>Auto</span></div>
+        </nav>
+
+        <section class="card-form">
+            <h2 class="form-title">Escala de 0 a 10</h2>
+
+            <div class="question-group central">
+                <p class="question-text">E hoje, qual o seu nível de estresse?</p>
+                
+                <div class="scale-row color-scale">
+                    <label class="scale-option lv-0"><input type="radio" name="estresse" value="0"><span>0</span></label>
+                    <label class="scale-option lv-1"><input type="radio" name="estresse" value="1"><span>1</span></label>
+                    <label class="scale-option lv-2"><input type="radio" name="estresse" value="2"><span>2</span></label>
+                    <label class="scale-option lv-3"><input type="radio" name="estresse" value="3"><span>3</span></label>
+                    <label class="scale-option lv-4"><input type="radio" name="estresse" value="4"><span>4</span></label>
+                    <label class="scale-option lv-5"><input type="radio" name="estresse" value="5"><span>5</span></label>
+                    <label class="scale-option lv-6"><input type="radio" name="estresse" value="6"><span>6</span></label>
+                    <label class="scale-option lv-7"><input type="radio" name="estresse" value="7"><span>7</span></label>
+                    <label class="scale-option lv-8"><input type="radio" name="estresse" value="8"><span>8</span></label>
+                    <label class="scale-option lv-9"><input type="radio" name="estresse" value="9"><span>9</span></label>
+                    <label class="scale-option lv-10"><input type="radio" name="estresse" value="10"><span>10</span></label>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn-voltar" onclick="history.back()">Voltar</button>
+                <button class="btn-proximo" id="btnFinalizar">Finalizar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="avaliacao.js"></script>
+</body>
+</html>

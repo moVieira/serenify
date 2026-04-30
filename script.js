@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.body.style.transition = 'opacity 0.5s ease';
                 
                 setTimeout(() => {
-                    alert('Navegando para a próxima etapa...');
+                    window.location.href = "perfil.html";
                     // location.href = "proxima-pagina.html"; 
                     
                     // Restaura a opacidade para o alert
@@ -76,3 +76,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     createParticles();
 });
+
+// Seleção de opções
+document.querySelectorAll('.options button').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const siblings = btn.parentElement.querySelectorAll('button');
+        siblings.forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+    });
+
+});
+

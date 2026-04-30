@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle - Bem-Estar</title>
+    <link rel="stylesheet" href="painel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <div class="background-elements">
+        <img src="assets/swirl-top.png" alt="" class="deco top-right">
+        <img src="assets/bg-flower.png" alt="" class="deco bottom-right">
+        <img src="assets/swirl-bottom.png" alt="" class="deco bottom-left">
+    </div>
+
+    
+    <main class="main-container">
+        <header class="hero-section">
+            <h1>Vamos avaliar<br>seu Bem-Estar.</h1>
+        </header>
+
+        <div class="stepper">
+            <div class="step check">✓</div><div class="line"></div>
+            <div class="step check">✓</div><div class="line"></div>
+            <div class="step check">✓</div><div class="line"></div>
+            <div class="step check">✓</div><div class="line"></div>
+            <div class="step check">✓</div><div class="line"></div>
+            <div class="step active">6</div>
+        </div>
+
+        <section class="glass-panel">
+            <h2 class="panel-title">Painel de Controle</h2>
+            
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="card-header">
+                        <div class="dot"></div>
+                        <span>Nível de Estresse</span>
+                    </div>
+                    <div class="chart-area">
+                        <div class="gauge-container">
+                            <div class="gauge-bg"></div>
+                            <div class="gauge-inner">
+                                <span class="status-text">Calmo</span>
+                            </div>
+                            <div class="pointer-wrapper" id="ptrStress">
+                                <div class="arrow-tip"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="card-footer">Balanceado</span>
+                </div>
+
+                <div class="result-card">
+                    <div class="card-header">
+                        <div class="dot"></div>
+                        <span>Score do Estresse</span>
+                    </div>
+                    <div class="chart-area">
+                        <div class="gauge-container">
+                            <div class="gauge-bg"></div>
+                            <div class="gauge-inner">
+                                <div class="score-display">
+                                    <span class="score-num">20.0</span>
+                                    <span class="score-den">/100</span>
+                                </div>
+                            </div>
+                            <div class="pointer-wrapper" id="ptrScore">
+                                <div class="arrow-tip"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="card-footer">Muito bom</span>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="btnVoltar" class="btn btn-voltar">Voltar</button>
+                <button id="btnFinalizar" class="btn btn-finalizar">Finalizar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="painel.js"></script>
+</body>
+</html>

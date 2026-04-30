@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Bem-Estar - IA Health</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <div class="background-elements">
+        <img src="assets/swirl-top.png" alt="" class="deco top-right">
+        <img src="assets/bg-flower.png" alt="" class="deco bottom-right">
+        <img src="assets/swirl-bottom.png" alt="" class="deco bottom-left">
+    </div>
+
+    <main class="main-container">
+        <header class="hero-text">
+            <h1>Vamos avaliar<br>seu Bem-Estar.</h1>
+        </header>
+
+        <nav class="navbar">
+            <div class="step active"><div class="circle">1</div><span>Perfil</span></div>
+            <div class="line"></div>
+            <div class="step"><div class="circle">2</div><span>Rotina</span></div>
+            <div class="line"></div>
+            <div class="step"><div class="circle">3</div><span>Contexto</span></div>
+            <div class="line"></div>
+            <div class="step"><div class="circle">4</div><span>Emoção</span></div>
+            <div class="line"></div>
+            <div class="step"><div class="circle">5</div><span>Apoio</span></div>
+            <div class="line"></div>
+            <div class="step"><div class="circle">6</div><span>Auto</span></div>
+        </nav>
+
+        <section class="card-form">
+            <h2 class="form-title">Vamos começar pelo seu perfil.</h2>
+
+            <div class="question-group">
+                <label class="question-label">Qual sua idade?</label>
+                <div class="options-row">
+                    <label class="option-pill">
+                        <input type="radio" name="age" value="16-18">
+                        <div class="pill-content">
+                            <div class="dot"></div><span>16-18</span>
+                        </div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="age" value="19-21">
+                        <div class="pill-content">
+                            <div class="dot"></div><span>19-21</span>
+                        </div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="age" value="22-25">
+                        <div class="pill-content">
+                            <div class="dot"></div><span>22-25</span>
+                        </div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="age" value="26+">
+                        <div class="pill-content">
+                            <div class="dot"></div><span>26+</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="question-group">
+                <label class="question-label">Qual seu gênero?</label>
+                <div class="options-row">
+                    <label class="option-pill">
+                        <input type="radio" name="gender" value="feminino">
+                        <div class="pill-content">
+                            <div class="dot"></div><span>Feminino</span>
+                        </div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="gender" value="masculino">
+                        <div class="pill-content">
+                            <div class="dot"></div><span>Masculino</span>
+                        </div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="gender" value="outro">
+                        <div class="pill-content">
+                            <div class="dot"></div><span>Outro</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <button class="btn-proximo" id="nextBtn">Próximo</button>
+        </section>
+    </main>
+
+    <script src="perfil.js"></script>
+</body>
+</html>

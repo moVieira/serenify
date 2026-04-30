@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Bem-Estar - Rotina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rotina.css">
+</head>
+<body>
+    <div class="background-elements">
+        <img src="assets/swirl-top.png" alt="" class="deco top-right">
+        <img src="assets/bg-flower.png" alt="" class="deco bottom-right">
+        <img src="assets/swirl-bottom.png" alt="" class="deco bottom-left">
+    </div>
+
+    <main class="main-container">
+        <header class="hero-text">
+            <h1>Vamos avaliar<br>seu Bem-Estar.</h1>
+        </header>
+
+        <nav class="navbar">
+            <div class="step completed"><div class="circle">1</div><span>Perfil</span></div>
+            <div class="line active"></div>
+            <div class="step active"><div class="circle">2</div><span>Rotina e Hábitos</span></div>
+            <div class="line"></div>
+            <div class="step"><div class="circle">3</div><span>Pressão e Contexto</span></div>
+            <div class="line"></div>
+            <div class="step"><div class="circle">4</div><span>Estado Emocional</span></div>
+            <div class="line"></div>
+            <div class="step"><div class="circle">5</div><span>Apoio Social</span></div>
+            <div class="line"></div>
+            <div class="step"><div class="circle">6</div><span>Autoavaliação</span></div>
+        </nav>
+
+        <section class="card-form">
+            <h2 class="form-title">Conte um pouco sobre sua rotina.</h2>
+
+            <div class="question-group">
+                <label class="question-label">Quantas horas você estuda por dia?</label>
+                <div class="options-row">
+                    <label class="option-pill">
+                        <input type="radio" name="study" value="1-2h">
+                        <div class="pill-content"><div class="dot"></div><span>1-2h</span></div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="study" value="3-4h">
+                        <div class="pill-content"><div class="dot"></div><span>3-4h</span></div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="study" value="5-6h">
+                        <div class="pill-content"><div class="dot"></div><span>5-6h</span></div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="study" value="7h+">
+                        <div class="pill-content"><div class="dot"></div><span>7h+</span></div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="question-group">
+                <label class="question-label">Quantas horas você dorme por noite?</label>
+                <div class="options-row">
+                    <label class="option-pill">
+                        <input type="radio" name="sleep" value="<5h">
+                        <div class="pill-content"><div class="dot"></div><span>Menos de 5h</span></div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="sleep" value="5-6h">
+                        <div class="pill-content"><div class="dot"></div><span>5-6h</span></div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="sleep" value="6-7h">
+                        <div class="pill-content"><div class="dot"></div><span>6-7h</span></div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="sleep" value="7-8h">
+                        <div class="pill-content"><div class="dot"></div><span>7-8h</span></div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="sleep" value="8h+">
+                        <div class="pill-content"><div class="dot"></div><span>8h+</span></div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="question-group">
+                <label class="question-label">Quantas horas por dia você passa em telas (celular, computador)?</label>
+                <div class="options-row">
+                    <label class="option-pill">
+                        <input type="radio" name="screens" value="1-2h">
+                        <div class="pill-content"><div class="dot"></div><span>1-2h</span></div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="screens" value="3-5h">
+                        <div class="pill-content"><div class="dot"></div><span>3-5h</span></div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="screens" value="6-8h">
+                        <div class="pill-content"><div class="dot"></div><span>6-8h</span></div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="screens" value="8h+">
+                        <div class="pill-content"><div class="dot"></div><span>8h+</span></div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="question-group">
+                <label class="question-label">Com que frequência você pratica atividade física?</label>
+                <div class="options-row">
+                    <label class="option-pill">
+                        <input type="radio" name="exercise" value="nunca">
+                        <div class="pill-content"><div class="dot"></div><span>Nunca</span></div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="exercise" value="1-2x">
+                        <div class="pill-content"><div class="dot"></div><span>1-2x por semana</span></div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="exercise" value="3-4x">
+                        <div class="pill-content"><div class="dot"></div><span>3-4x por semana</span></div>
+                    </label>
+                    <label class="option-pill">
+                        <input type="radio" name="exercise" value="5x+">
+                        <div class="pill-content"><div class="dot"></div><span>5x ou mais</span></div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn-voltar" onclick="window.history.back()">Voltar</button>
+                <button class="btn-proximo" id="nextBtn">Próximo</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="rotina.js"></script>
+</body>
+</html>

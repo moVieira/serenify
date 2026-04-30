@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Bem-Estar - Contexto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="escala.css">
+</head>
+<body>
+    <div class="background-elements">
+        <img src="assets/swirl-top.png" alt="" class="deco top-right">
+        <img src="assets/bg-flower.png" alt="" class="deco bottom-right">
+        <img src="assets/swirl-bottom.png" alt="" class="deco bottom-left">
+    </div>
+
+    <main class="main-container">
+        <header class="hero-text">
+            <h1>Vamos avaliar<br>seu Bem-Estar.</h1>
+        </header>
+
+        <nav class="navbar">
+            <div class="step completed"><div class="circle">1</div><span>Perfil</span></div>
+            <div class="line active"></div>
+            <div class="step completed"><div class="circle">2</div><span>Rotina e Hábitos</span></div>
+            <div class="line active"></div>
+            <div class="step active"><div class="circle">3</div><span>Pressão e Contexto</span></div>
+            <div class="line"></div>
+            <div class="step"><div class="circle">4</div><span>Estado Emocional</span></div>
+            <div class="line"></div>
+            <div class="step"><div class="circle">5</div><span>Apoio Social</span></div>
+            <div class="line"></div>
+            <div class="step"><div class="circle">6</div><span>Autoavaliação</span></div>
+        </nav>
+
+        <section class="card-form">
+            <h2 class="form-title">Escala de 0 a 10</h2>
+
+            <div class="question-group">
+                <label class="question-label">Quanto você sente pressão com provas e avaliações?</label>
+                <div class="scale-row">
+                    <label class="scale-option"><input type="radio" name="p1" value="0"><span>0</span></label>
+                    <label class="scale-option"><input type="radio" name="p1" value="1"><span>1</span></label>
+                    <label class="scale-option"><input type="radio" name="p1" value="2"><span>2</span></label>
+                    <label class="scale-option"><input type="radio" name="p1" value="3"><span>3</span></label>
+                    <label class="scale-option"><input type="radio" name="p1" value="4"><span>4</span></label>
+                    <label class="scale-option"><input type="radio" name="p1" value="5"><span>5</span></label>
+                    <label class="scale-option"><input type="radio" name="p1" value="6"><span>6</span></label>
+                    <label class="scale-option"><input type="radio" name="p1" value="7"><span>7</span></label>
+                    <label class="scale-option"><input type="radio" name="p1" value="8"><span>8</span></label>
+                    <label class="scale-option"><input type="radio" name="p1" value="9"><span>9</span></label>
+                    <label class="scale-option"><input type="radio" name="p1" value="10"><span>10</span></label>
+                </div>
+            </div>
+
+            <div class="question-group">
+                <label class="question-label">Quanto as expectativas da sua família te pressionam?</label>
+                <div class="scale-row">
+                    <label class="scale-option"><input type="radio" name="p2" value="0"><span>0</span></label>
+                    <label class="scale-option"><input type="radio" name="p2" value="1"><span>1</span></label>
+                    <label class="scale-option"><input type="radio" name="p2" value="2"><span>2</span></label>
+                    <label class="scale-option"><input type="radio" name="p2" value="3"><span>3</span></label>
+                    <label class="scale-option"><input type="radio" name="p2" value="4"><span>4</span></label>
+                    <label class="scale-option"><input type="radio" name="p2" value="5"><span>5</span></label>
+                    <label class="scale-option"><input type="radio" name="p2" value="6"><span>6</span></label>
+                    <label class="scale-option"><input type="radio" name="p2" value="7"><span>7</span></label>
+                    <label class="scale-option"><input type="radio" name="p2" value="8"><span>8</span></label>
+                    <label class="scale-option"><input type="radio" name="p2" value="9"><span>9</span></label>
+                    <label class="scale-option"><input type="radio" name="p2" value="10"><span>10</span></label>
+                </div>
+            </div>
+
+            <div class="question-group">
+                <label class="question-label">Quanto a sua situação financeira te causa estresse?</label>
+                <div class="scale-row">
+                    <label class="scale-option"><input type="radio" name="p3" value="0"><span>0</span></label>
+                    <label class="scale-option"><input type="radio" name="p3" value="1"><span>1</span></label>
+                    <label class="scale-option"><input type="radio" name="p3" value="2"><span>2</span></label>
+                    <label class="scale-option"><input type="radio" name="p3" value="3"><span>3</span></label>
+                    <label class="scale-option"><input type="radio" name="p3" value="4"><span>4</span></label>
+                    <label class="scale-option"><input type="radio" name="p3" value="5"><span>5</span></label>
+                    <label class="scale-option"><input type="radio" name="p3" value="6"><span>6</span></label>
+                    <label class="scale-option"><input type="radio" name="p3" value="7"><span>7</span></label>
+                    <label class="scale-option"><input type="radio" name="p3" value="8"><span>8</span></label>
+                    <label class="scale-option"><input type="radio" name="p3" value="9"><span>9</span></label>
+                    <label class="scale-option"><input type="radio" name="p3" value="10"><span>10</span></label>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn-voltar" onclick="window.history.back()">Voltar</button>
+                <button class="btn-proximo" id="nextBtn">Próximo</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="escala.js"></script>
+</body>
+</html>
