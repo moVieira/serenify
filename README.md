@@ -96,12 +96,4 @@ Resultados em `artifacts/training_report.json` (split estratificado 80/20, `rand
 **Modelo escolhido:** Logistic Regression — F1 praticamente empatado com LinearSVC e
 fornece probabilidades calibradas via `predict_proba`, usadas no score 0–100 do painel.
 
-## Proximos passos sugeridos
 
-- Persistir as avaliacoes em banco (Supabase/Postgres) para acompanhamento longitudinal.
-- Adicionar autenticacao para o usuario ver seu historico.
-- Coletar mais features no front que correspondam diretamente as colunas do dataset
-  (auto-estima, problemas respiratorios, condicoes de moradia) para reduzir o uso de
-  medianas.
-- Experimentar Random Forest e Gradient Boosting (ainda dentro de "ML classico"
-  permitido pelo edital).
